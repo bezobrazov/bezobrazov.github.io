@@ -1,22 +1,68 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,500&subset=latin,cyrillic);
 body {
-    background-color: #ECF0F1;
-    color: #2C3E50;
-    font-family: 'Roboto', sans-serif;
+    color: #DF000000;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
 }
 h1, h2, h3,
 h1 small, h2 small, h3 small {
     font-weight: 300;
 }
+header {background-size: cover;}
+@media (min-width: 991px) and (max-width: 1280px) { ... }
+@media (min-width: 1281px) and (max-width: 1600px) {
+    header {background-image: url("../img/header1600x900.jpg"); height: 900px;}
+    #info {margin-top: 135px;}
+}
+@media (min-width: 1601px){}
+
+#info h1 {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 45px;
+}
+#info h1 small {
+    text-transform: uppercase;
+    font-size: 20px;
+    }
+#info .btn {
+    margin-top: 45px;
+    font-size: 24px;
+    padding: 33px
+}
+.btn-danger {
+    background-color: #F44336
+}
 .navbar {
-    background-color: #2980B9;
+    background-color: #000;
+    border-radius: 0;
+    border-width: 0;
+    min-height: 45px;
+    margin-bottom: 0;
 }
-.nav > li > a:hover {
-    background-color: #3498DB;
+.navbar-nav > li > a
+{   color: #fff;
+    font-size: 15px;
+    padding: 15px 30px; 
+    line-height: 15px;
 }
-.navbar a {
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li.active > a {
+    background-color: #F44336;
+}
+
+footer {
+    background-color: #000;
+    height: 45px;
+}
+footer p {
     color: #fff;
-}
-.icon-bar {
-    background-color: #fff;
+    line-height: 15px;
+    font-size: 15px;
+    padding-top: 15px;
 }

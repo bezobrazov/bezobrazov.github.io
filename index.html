@@ -21,61 +21,82 @@
 </head>
 
 <body>
-    <nav class="navbar" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-            <span class="sr-only">Меню</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Начало</a></li>
-                <li><a href="#contacts"><span class="glyphicon glyphicon-envelope"></span> Контакты</a></li>
-            </ul>
-        </div>
-    </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-2">
-                <img src="img/bezobrazov.jpg" alt="Александр Безобразов" class="img-responsive img-circle" />
+    <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                    <span class="sr-only">Меню</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Начало</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-10">
-                <h1>Александр Безобразов <br />
-                <small>Организую маркетинг, повышаю продажи</small>
-                </h1>
+        </nav>
+        <div class="container">
+            <div id="info" class="row">
+                <div class="col-xs-12 col-md-6 col-md-offset-6">
+                    <h1>Александр Безобразов <br />
+                    <small>Организую маркетинг, повышаю продажи</small>
+                    </h1>
+                    <p>
+                        Эксперт по маркетингу и продажам <br />
+                        Помогаю компаниям малого и среднего бизнеса:
+                        <ol>
+                            <li>Правильно организовать маркетинговую деятельность</li>
+                            <li>Повысить эффективность продажи товаров и услуг</li>
+                            <li>Выбрать подрядчиков для внедрения CRM-систем</li>
+                        </ol>
+                        и получить нужный результат
+                    </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <a href="#contacts" class="btn btn-danger btn-block">Мне нужен результат!</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
+    </header>
+    <div class="container">
+        <div id="services" class="row">
+            <div class="col-xs-12 col-sm-4">
+                <h2>Аутсорсинг маркетинга</h2>
+                <ul>
+                    <li>Брендинг, включая позиционирование и разработку фирменного стиля</li>
+                    <li>Создание сайтов и посадочных страниц с высоким уровнем конверсии</li>
+                    <li>PR-служба полного цикла: копирайтинг, коммуникации со СМИ</li>
+                    <li>Организация мероприятий: участие в выставках, проведение собственных конференций и т.п.</li>
+                </ul>
+            </div>
             <div class="col-xs-12 col-sm-4">
                 <h2>Управление маркетингом</h2>
                 <ul>
-                    <li>Организация маркетинговых подразделений</li>
-                    <li>Разработка и оптимизация бизнес-процессов</li>
-                    <li>Создание маркетинговой стратегии и плана маркетинга</li>
+                    <li>Внештатный руководитель отдела маркетинга</li>
+                    <li>Разработка планов маркетинга, планов рекламной и PR-деятельности</li>
+                    <li>Формирование инструкций, регламентов и системы мотивации для маркетологов</li>
+                    <li>Оценка компетенций маркетологов и разработка программ повышения их квалификации</li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4">
-                <h2>Интернет-маркетинг</h2>
+                <h2>Повышение продаж</h2>
                 <ul>
-                    <li>Контекстная реклама в Яндекс.Директ и Google Adwords</li>
-                    <li>Создание сайтов и посадочных страниц</li>
-                    <li>Поисковая оптимизация (SEO)</li>
+                    <li>Сопровождение при выборе и внедрении CRM-системы</li>
+                    <li>Формирование процессов продаж на основе методологии &lt;Воронка прожаж&gt;</li>
+                    <li>Внедрение методок прогнозирования и анализа продаж для B2C-компаний</li>
+                    <li>Разработка стратегии роста продаж для B2B, e-commerce и startup-компаний</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-4">
-                <h2>Классический маркетинг</h2>
-                <ul>
-                    <li>Разработка позиционирования</li>
-                    <li>Брендинг и создание фирменного стиля</li>
-                    <li>Написание статей и пресс-релизов</li>
-                    <li>Организация мероприятий</li>
-                </ul>
-            </div>
+            
         </div>
         <div class="row">
             <div class="col-xs-12">
@@ -84,32 +105,47 @@
         </div>
         <a id="contacts"></a>
         <div class="row">
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-4 col-sm-offset-6">
                 <h2>Контакты</h2>
-                <a href="http://ru.linkedin.com/in/bezobrazov" target="_blank">LinkedIn</a>
-                <!--<h3>Связаться по почте</h3>
+                <a href="#" target="_blank">Показать номер телефона</a><br />
+                <a href="http://ru.linkedin.com/in/bezobrazov" target="_blank">Посетить профиль в LinkedIn</a>
+                <h3>Написать сообщение</h3>
                 <div class="row">
-                    <form role="form">
-                        <div class="form-group col-xs-12 col-sm-6">
-                            <input type="text" class="form-control" id="name" placeholder="Имя">
-                            <p class="help-block">Как к вам обращаться?</p>
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-6">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                            <p class="help-block">На какой email Вам написать?</p>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){alert("Спасибо");}"></iframe>
+                    <form action="https://docs.google.com/forms/d/1xRCbaSBt2e8N6E0kRJqktCP9xYg5_4Sse8eoDgIJvmE/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="form-group col-xs-12">
+                            <p class="help-block">Ваще имя</p>
+                            <input type="text" name="entry.1531123053" class="form-control" id="name">
+                            
                         </div>
                         <div class="form-group col-xs-12">
-                            <textarea id="message" class="col-xs-12" placeholder="Ваше сообщение" rows="5"></textarea>
-                            <p class="help-block">Ваше сообщение.</p>
+                            <p class="help-block">Ваш email</p>
+                            <input type="email" name="entry.1989179876" class="form-control" id="email">
                         </div>
-                        <div class="form-group col-xs-12 col-sm-offset-9 col-sm-3">
-                            <button type="submit" class="btn btn-primary btn-block">Написать</button>
+                        <div class="form-group col-xs-12">
+                            <p class="help-block">Ваше сообщение</p>
+                            <textarea id="message" name="entry.401383554" class="col-xs-12" rows="5"></textarea>
+                            
+                        </div>
+                        <div class="form-group col-xs-12 col-sm-offset-6 col-sm-6">
+                            <button type="submit" class="btn btn-danger btn-block">Свяжитесь со мной</button>
                         </div>
                     </form>
-                </div>-->
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>&copy; 2015 Александр Безобразов</p>
+                </div>
+            </div>    
+        </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
