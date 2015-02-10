@@ -103,36 +103,43 @@
                 
             </div>
         </div>
-        <a id="contacts"></a>
-        <div class="row">
-            <div class="col-xs-12 col-sm-4 col-sm-offset-6">
-                <h2>Контакты</h2>
-                <a href="#" target="_blank">Показать номер телефона</a><br />
-                <a href="http://ru.linkedin.com/in/bezobrazov" target="_blank">Посетить профиль в LinkedIn</a>
-                <h3>Написать сообщение</h3>
-                <div class="row">
-                    <script type="text/javascript">var submitted=false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){alert("Спасибо");}"></iframe>
-                    <form action="https://docs.google.com/forms/d/1xRCbaSBt2e8N6E0kRJqktCP9xYg5_4Sse8eoDgIJvmE/formResponse" method="post"
-target="hidden_iframe" onsubmit="submitted=true;">
-                        <div class="form-group col-xs-12">
-                            <p class="help-block">Ваще имя</p>
-                            <input type="text" name="entry.1531123053" class="form-control" id="name">
-                            
+    </div>
+    
+    
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div id="form" class="col-xs-12 col-sm-6 col-sm-offset-6">
+                    <div class="row"><div class="col-xs-12 col-md-10 col-md-offset-1">
+                        <h2>Контакты</h2>
+                        <p><a href="#" target="_blank">Показать номер телефона</a></p>
+                        <p><a href="http://ru.linkedin.com/in/bezobrazov" target="_blank">Посетить профиль в LinkedIn</a></p>
+                        <h3>Написать сообщение</h3>
+                        <div class="row">
+                            <script type="text/javascript">var submitted=false;</script>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){alert("Спасибо");}"></iframe>
+                            <form action="https://docs.google.com/forms/d/1xRCbaSBt2e8N6E0kRJqktCP9xYg5_4Sse8eoDgIJvmE/formResponse" method="post"
+        target="hidden_iframe" onsubmit="submitted=true;">
+                                <div class="form-group col-xs-12">
+                                    <p class="help-block">Ваше имя</p>
+                                    <input type="text" name="entry.1531123053" class="form-control" id="name">
+
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <p class="help-block">Ваш email</p>
+                                    <input type="email" name="entry.1989179876" class="form-control" id="email">
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <p class="help-block">Ваше сообщение</p>
+                                    <textarea id="message" name="entry.401383554" class="col-xs-12" rows="5"></textarea>
+
+                                </div>
+                                <div class="form-group col-xs-12 col-sm-offset-6 col-sm-6">
+                                    <button type="submit" class="btn btn-danger btn-block">Свяжитесь со мной</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group col-xs-12">
-                            <p class="help-block">Ваш email</p>
-                            <input type="email" name="entry.1989179876" class="form-control" id="email">
-                        </div>
-                        <div class="form-group col-xs-12">
-                            <p class="help-block">Ваше сообщение</p>
-                            <textarea id="message" name="entry.401383554" class="col-xs-12" rows="5"></textarea>
-                            
-                        </div>
-                        <div class="form-group col-xs-12 col-sm-offset-6 col-sm-6">
-                            <button type="submit" class="btn btn-danger btn-block">Свяжитесь со мной</button>
-                        </div>
-                    </form>
+                    </div></div>
                 </div>
             </div>
         </div>
