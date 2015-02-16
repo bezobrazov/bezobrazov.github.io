@@ -82,7 +82,8 @@ header {
 }
 #services h2 {
     font-size: 25px;
-    line-height: 45px;
+    line-height: 25px;
+    padding-bottom: 20px;
     margin: 0;
 }
 #services ul {
