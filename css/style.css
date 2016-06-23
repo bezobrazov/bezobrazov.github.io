@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,500&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);
 body, p,
 h1, h2, h3,
 h1 small, h2 small, h3 small{
@@ -15,49 +16,75 @@ h1 small, h2 small, h3 small {
     font-weight: 300;
 }
 
+h2 {
+    font-size: 30px;
+    line-height: 48px;
+}
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
 
+@media (max-width: 990px) {
+    header {background-image: url("../img/header1280x720.jpg");}
+}
 @media (min-width: 991px) and (max-width: 1280px) {
-    header {background-image: url("../img/header1280x720.jpg"); height: 720px;}
-    #contacts {background-image: url("../img/footer1280x720.jpg"); height: 720px;}
+    header {background-image: url("../img/header1280x720.jpg");}
 }
 @media (min-width: 1281px) and (max-width: 1600px) {
-    header {background-image: url("../img/header1600x900.jpg"); height: 900px;}
-    #contacts {background-image: url("../img/footer1600x900.jpg"); height: 900px;}
+    header {background-image: url("../img/header1600x900.jpg");}
 }
 @media (min-width: 1601px){
-    header {background-image: url("../img/header1920x1080.jpg"); height: 1080px;}
-    #contacts {background-image: url("../img/footer1920x1080.jpg"); height: 1080px;}
+    header {background-image: url("../img/header1920x1080.jpg");}
 }
 
+html,body { height: 100%; margin: 0px; padding: 0px; }
 /* Header */
 header {
     background-size: cover;
     background-position: right top;
+    height: 100%;
     }
-#info {margin-top: 135px;}    
-#info h1 {
-    font-size: 45px;
-    line-height: 45px;
-    margin-bottom: 45px;
+.marck {
+    color: #343434;
+    font-family: 'Marck Script', sans-serif;
 }
-#info h1 small {
-    text-transform: uppercase;
-    font-size: 20px;
-    }
-#info .btn {
-    margin-top: 45px;
+.vensel {
+    font-size: 96px;
+    line-height: 96px;
+}
+.motto {
+    font-size: 32px;
+    line-height: 48px;
+}
+.promo {
+    margin-left: 50%;
+    display: block;
+    position: relative;
+    top: 30%;
+}
+.btn-huge{
+    width: 232px;
+    padding: 12px;
     font-size: 24px;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 48px;
 }
-.btn-danger {
+.btn-red,.btn-red:hover {
     background-color: #F44336;
+    color: #fff;
 }
+
+/*Navbar*/
 .navbar {
     background-color: #000;
     border-radius: 0;
     border-width: 0;
-    min-height: 45px;
+    min-height: 48px;
     margin-bottom: 0;
 }
 .navbar-toggle .icon-bar {
@@ -65,9 +92,8 @@ header {
     }
 .navbar-nav > li > a
 {   color: #fff;
-    font-size: 15px;
-    padding: 15px 30px; 
-    line-height: 15px;
+    font-size: 16px;
+    padding: 16px 32px; 
 }
 .nav > li > a:hover,
 .nav > li > a:focus,
@@ -75,76 +101,65 @@ header {
     background-color: #F44336;
 }
 
+.navbar-header a.navbar-brand {
+    color: #fff;
+}
 
-/* Раздел услуги */
-#services {
-    margin: 90px 0;
+#offers{
+    
+
 }
-#services h2 {
-    font-size: 25px;
-    line-height: 25px;
-    padding-bottom: 20px;
-    margin: 0;
+#offers .row div{
+    margin-top: 96px;
+    text-align: center;
 }
-#services ul {
+#offers .row div h2 {
+    margin-top: 48px;
+    }
+#bio {
+    margin-top: 24px;
+    margin-bottom: 96px;
+}
+#bio .row div {
+    margin-top: 48px;
+}
+footer {
+    background-color: #000;
+    height: 48px;
+}
+footer p {
+    color: #fff;
+    margin-top: 16px;
     font-size: 16px;
-    list-style-type:none;
-    padding: 0;
+    line-height: 16px;
 }
-#services li {
-    margin-top: 15px;
-}
-#services li:before {
-    content: "\2014 \20";
+#offers i.fa {
+    color: #F44336;
 }
 
 /* Form */
 #form {
-    margin-top: 90px;
-    background-color: #FFF;
-    }
-#form h2 {
-    font-size: 45px;
-    line-height: 45px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-#form h3 {
-    font-size: 30px;
-    line-height: 45px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 24px;
+    margin-bottom: 96px;
 }
 #form p.help-block {
-    font-size: 15px;
-    line-height: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-bottom: 4px;
     }
 #form .form-control {
-    height: 43px;
+    height: 47px;
     border: 1px solid #000000;
     }
 #form textarea {
-    height: 135px;
+    height: 146px;
     border: 1px solid #000000;
     }
 #form .btn {
-    margin-top: 10px;
-    margin-bottom: 35px;
-    font-size: 20px;
-    line-height: 25px;
-    padding: 10px;
-}
-
-footer {
-    background-color: #000;
-    height: 45px;
-}
-footer p {
-    color: #fff;
-    line-height: 15px;
-    font-size: 15px;
-    padding-top: 15px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
 }
